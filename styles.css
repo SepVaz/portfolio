@@ -1,0 +1,44 @@
+
+.navbar ul {
+    text-align: right;
+    float: right;
+}
+
+.navbar li {
+    display: inline-block;
+    
+}
+
+.hero-image {
+    background-image: url(camping.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+img {
+    text-align: center;
+}
+main li {
+    display: inline-block;
+    text-align: center;
+}
+
+.li button{
+    border-radius: none;
+    text-align: center;
+}
