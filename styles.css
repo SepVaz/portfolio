@@ -1,9 +1,10 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
     
-    body, html {
+body, html {
     height: 100%
 }
 
@@ -18,34 +19,50 @@
 }
 
 .hero-text {
+    text-transform: uppercase;
     text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    padding-top: 150px;
+    color: whitesmoke;
+
 }
 
 nav {
     padding: 20px;
+    
+    
 }
 
 .navbar ul {
     text-align: right;
     float: right;
+    
 }
 
 .navbar li {
     display: inline-block;
+    margin: 10px 20px;
+    
 }
 
 a {
     text-decoration: none;
-    color: white;
-    text-decoration: underline;
+    color: whitesmoke;
 }
 
 h2 {
     text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
 }
 
 h4 {
     text-align: center;
+    font-weight: 100;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 img {
@@ -54,14 +71,26 @@ img {
 
 div.container{
     text-align: center;
+    background-color: rgb(249, 245, 245);
+    border-radius: none;
+}
 
+.button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+   
+    
 }
 
 ul.faciliteter{
     display: inline-block;
     text-align: left;
+   
 }    
-
 
 main li {
     display: inline-block;
@@ -70,13 +99,21 @@ main li {
     color: black;
     text-align: center;
     display: inline-block;
-    margin: 4px 2px;
-    padding: 10px 20px;
-    border-radius: 16px;
-    outline: none;
+    border-radius: 0px;
     
 }
 
+
+div.card {
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: burlywood;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+    border-radius: 25px;
+   
+  }
 
 footer {
     padding: 20px;
@@ -84,7 +121,7 @@ footer {
 
 footer ul {
     text-align: center;
-    
+    display: ruby;
 }
 
 footer li {
@@ -92,7 +129,6 @@ footer li {
     padding: 10px 20px;
     margin-bottom: 20px;
 }
-
 
 section {
     text-align: center;
