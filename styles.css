@@ -1,3 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    
+    body, html {
+    height: 100%
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Image/camping.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0px 0px 20px 0px;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+nav {
+    padding: 20px;
+}
 
 .navbar ul {
     text-align: right;
@@ -6,20 +32,12 @@
 
 .navbar li {
     display: inline-block;
-    
 }
 
-.hero-image {
-    background-image: url(camping.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-text {
-    text-align: center;
-    
+a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
 }
 
 h2 {
@@ -33,12 +51,49 @@ h4 {
 img {
     text-align: center;
 }
-main li {
-    display: inline-block;
+
+div.container{
     text-align: center;
+
 }
 
-.li button{
-    border-radius: none;
+ul.faciliteter{
+    display: inline-block;
+    text-align: left;
+}    
+
+
+main li {
+    display: inline-block;
+    background-color: #ddd;
+    border: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    outline: none;
+    
+}
+
+
+footer {
+    padding: 20px;
+}
+
+footer ul {
+    text-align: center;
+    
+}
+
+footer li {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+
+section {
     text-align: center;
 }
