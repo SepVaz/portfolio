@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
 }
     
 body, html {
@@ -30,8 +29,6 @@ body, html {
 
 nav {
     padding: 20px;
-    
-    
 }
 
 .navbar ul {
@@ -55,7 +52,6 @@ h2 {
     text-align: center;
     padding-bottom: 5px;
     padding-top: 5px;
-
 }
 
 h4 {
@@ -70,25 +66,24 @@ img {
 }
 
 div.container{
-    text-align: center;
     background-color: rgb(249, 245, 245);
-    border-radius: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .button {
-    border-radius: 10px;
-    padding: 10px 20px;
+    border-radius: 25px;
+    padding: 10px 20px 10px;
     margin: 0px;
     text-decoration: none;
     display: inline-block;
     border: none;
-   
-    
 }
 
 ul.faciliteter{
     display: inline-block;
     text-align: left;
+ 
    
 }    
 
