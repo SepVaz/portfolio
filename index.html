@@ -17,6 +17,9 @@
                 <li><a href="#">Tjänster</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
+            <div class="hamburger">
+                <img src="Image/hamburger.png" alt="hamburger">
+            </div>
             </div>
         </nav>
         
@@ -27,34 +30,60 @@
     </header>
 
     <main>
-        <section>
-        <h2>Faciliteter</h2>
-         <div class="container">
+        <section class="facilities">
+        <h2>FACILITETER</h2>
            <ul class="faciliteter">
             <li><button class="button">Kajakklubb</button></li>
             <li><button class="button">Lekplats</button></li>
             <li><button class="button">Restaurang</button></li>
             <li><button class="button">Cykeluthyrning</button></li>
            </ul>
-         </div>
        </section>
     
 
-        <section>
-            <h2>Tjänster</h2>
-            <h4>Vi erbjuder olika tjänster som:</h4> <br>
-            <img src="Image/guidadtur.jpg" alt="guidadtur" width="30%"> 
-            <img src="Image/Kväll.jpg" alt="Kväll" width="30%">
-            <img src="Image/Marshmallow.jpg" alt="Marshmallow" width="30%"> 
+        <section class="services">
+            <h2>TJÄNSTER</h2>
+            <p>Vi erbjuder olika tjänster som:</p>
+            <div class="wrapper">
+                <div class="card">
+                 <h4>Guidad tur</h4>
+            <img src="Image/guidadtur.jpg" alt="guidadtur" title="guidadtur"/> 
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, molestiae.</p>
+         </div>
+
+         <div class="card">
+            <h4>Stjärnskådning</h4>
+            <img src="Image/Kväll.jpg" alt="stjärnskådning" title="stjärnskådning"/>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, aut.</p>
+         </div>
+
+         <div class="card">
+             <h4>Lägereld</h4>
+             <img src="Image/Marshmallow.jpg" alt="Lägereld" title="lägereld"/> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, laudantium.</p> 
+            </div>
         </section>
 
-         <section>
-            <div class="card">
-             <h2>Aktiviteter</h2>
-             <h4>Utforska omgivningen genom <a href="">vandring</a> <a href="">fiske</a> och <a href="">cykling</a>.</h4>
+        
+         <section class="activities">
+             <h2>AKTIVITETER</h2>
+             <div class="wrapper">
+            <div class="activities-card">
+             <a href="https://sv.wikipedia.org/wiki/Vandring" target="_blank"></a>
+             <img src="Image/hike-icon.png" alt="vandring">
              </div>
+
+                <div class="activities-card">
+                <a href="https://sv.wikipedia.org/wiki/Fiske" target="_blank"></a>
+                <img src="Image/fishing-icon.png" alt="fiske">
+            </div> 
+
+            <div class="activities-card">
+            <a href="https://sv.wikipedia.org/wiki/Cykelsport" target="_blank"></a>
+            <img src="Image/bicycle-icon.png" alt="cykling">
+             </div>
+            </div>
             </section>
-       
 
     </main>
     <footer>
@@ -63,13 +92,12 @@
             <li>Facebook</li>
             <li>LinkedIn</li>
         </ul>
-    
-
-        <section> 
+        <p>
             Camping<br>
         Skogsvägen 45 <br>
-        145 34 Skogalund
-        </section>
+        145 34 Skogalund<br>
+        </p>
 
-    </footer>
+    </footer> 
+    </body>
 </html>

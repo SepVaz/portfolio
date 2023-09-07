@@ -1,7 +1,7 @@
 * {
     margin: 0px;
-    padding: 0px;
-}
+     }
+    
     
 body, html {
     height: 100%
@@ -24,23 +24,30 @@ body, html {
     font-weight: 400;
     padding-top: 150px;
     color: whitesmoke;
-
 }
 
 nav {
-    padding: 20px;
+    height: 50px;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 .navbar ul {
-    text-align: right;
-    float: right;
-    
+    flex-direction: row;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    font-size: large;
 }
 
 .navbar li {
-    display: inline-block;
-    margin: 10px 20px;
-    
+    display: flex;
+    justify-content: end;
+    margin: 10px 20px;  
+    flex-wrap: wrap;
+}
+
+.hamburger {
+    display: none;
 }
 
 a {
@@ -54,77 +61,167 @@ h2 {
     padding-top: 5px;
 }
 
+
+.facilities{
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;}
+
+.button {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 16px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+}
+
+ul.faciliteter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center; 
+    padding: 20px;
+}    
+
+.services {
+    padding: 0px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section p {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+  }
+  
+
+main li {
+    display: inline-block;
+    background-color: #fdfdfd;
+    border: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0px;  
+    padding: 20px;
+}
+
 h4 {
     text-align: center;
     font-weight: 100;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-weight: bold;
 }
 
-img {
-    text-align: center;
-}
-
-div.container{
-    background-color: rgb(249, 245, 245);
-    padding: 0px;
-    margin: 0px;
-}
-
-.button {
-    border-radius: 25px;
-    padding: 10px 20px 10px;
-    margin: 0px;
-    text-decoration: none;
-    display: inline-block;
-    border: none;
-}
-
-ul.faciliteter{
-    display: inline-block;
-    text-align: left;
- 
-   
-}    
-
-main li {
-    display: inline-block;
-    background-color: #ddd;
-    border: none;
-    color: black;
-    text-align: center;
-    display: inline-block;
-    border-radius: 0px;
-    
-}
-
-
-div.card {
-    width: 284px;
-    padding: 10px 10px 20px 10px;
-    border: 1px solid #BFBFBF;
-    background-color: burlywood;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: inline-block;
-    border-radius: 25px;
-   
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: #ece4df;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); margin: auto;
+    margin-bottom: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
   }
 
+  .card h4 {
+    align-self: flex-start;
+    padding-left: 1rem;
+  }
+  
+  .card p {
+    background-color: white;
+    align-self: flex-start;
+    margin: 0;
+    padding: 16px;
+  }
+
+.activities-card {
+    background-color: #ece4df;
+    border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); margin: auto;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
 footer {
-    padding: 20px;
-}
+    display: flex;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer ul {
+    display: flex;
+    padding-bottom: 10px;
+    }
 
-footer ul {
-    text-align: center;
-    display: ruby;
-}
+    footer li {
+        display: flex;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
 
-footer li {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-}
+    @media (max-width: 1024px) {
+        
+    }
 
-section {
-    text-align: center;
-}
+    @media (msx-width: 800px) {
+
+
+    }
+
+    @media (max-width: 600px) {
+
+        .hamburger {
+            display: flex;
+            justify-content: end;
+            padding: 10px
+        }
+        .hamburger img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .navbar li {
+            display: none;
+        }
+       
+        .button {
+            width: 100%;
+            font-size: 2.5rem;
+
+        }
+
+        .card {
+            width: 80%;
+            font-size: 2.5rem;
+          
+        }
+
+
+    }
