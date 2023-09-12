@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mer Camping</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="hero-image">
         <nav>
             <ul class="navbar">
                 <li><a href="#">Hem</a></li>
-                <li><a href="#">Om Oss</a></li>
+                <li><a href="members.html">Om Oss</a></li>
                 <li><a href="#">Faciliteter</a></li>
                 <li><a href="#">Tjänster</a></li>
                 <li><a href="#">Kontakt</a></li>
@@ -36,6 +37,7 @@
             <li><button class="button">Restaurang</button></li>
             <li><button class="button">Cykeluthyrning</button></li>
            </ul>
+           
        </section>
     
 
@@ -83,6 +85,30 @@
             </div>
             </section>
 
+            <section class="newsletter">
+                <form>
+                    <p>Anmäl dig till att få vårt nyhetsbrev</p>
+                    <div class="form-card">
+                     <label for="email">E-post</label><br>
+                     <input type="email" name="email" id="email" placeholder="epost@mail.com" required><br>
+                   </div>
+
+                    <div class="form-card">
+                        <label for="checkbox"></label>
+                        <input type="checkbox" name="approved" id="checkbox" required>Godkänner villkoren
+                    </div>
+                      <button type="submit">Gå med</button>
+
+                  
+
+                   <!-- SEP TEST KOD
+                     E-post: <br><input type="email" required><br>
+                    <input type="submit" value="Gå med">
+                    <input type="reset">
+                    <input type="checkbox" required> Godkänner villkoren -->
+                </form>
+            
+              </section>
     </main>
     <footer>
         <ul>
