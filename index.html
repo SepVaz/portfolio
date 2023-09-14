@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="hero-image">
         <nav>
@@ -21,22 +23,22 @@
                 <img src="Image/hamburger.png" alt="hamburger">
             </div>
         </nav>
-        
-            <div>
-                <h1 class="hero-text">Välkommen till vår camping</h1>
-          </div>
+
+        <div>
+            <h1 class="hero-text">Välkommen till vår camping</h1>
+        </div>
 
     </header>
 
     <main>
-         <section class="facilities">
-         <h2>FACILITETER</h2>
-           <ul class="faciliteter">
-            <li><button class="button">Kajakklubb</button></li>
-            <li><button class="button">Lekplats</button></li>
-            <li><button class="button">Restaurang</button></li>
-            <li><button class="button">Cykeluthyrning</button></li>
-           </ul>
+        <section class="facilities">
+            <h2>FACILITETER</h2>
+            <ul class="faciliteter">
+                <li><button class="button">Kajakklubb</button></li>
+                <li><button class="button">Lekplats</button></li>
+                <li><button class="button">Restaurang</button></li>
+                <li><button class="button">Cykeluthyrning</button></li>
+            </ul>
         </section>
 
         <section class="services">
@@ -44,67 +46,83 @@
             <p>Vi erbjuder olika tjänster som:</p>
             <div class="wrapper">
                 <div class="card">
-                 <h4>Guidad tur</h4>
-            <img src="Image/guidadtur.jpg" alt="guidadtur" title="guidadtur"/> 
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, molestiae.</p>
-         </div>
+                    <h4>Guidad tur</h4>
+                    <img src="Image/guidadtur.jpg" alt="guidadtur" title="guidadtur" />
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, molestiae.</p>
+                </div>
 
-         <div class="card">
-            <h4>Stjärnskådning</h4>
-            <img src="Image/Kväll.jpg" alt="stjärnskådning" title="stjärnskådning"/>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, aut.</p>
-         </div>
+                <div class="card">
+                    <h4>Stjärnskådning</h4>
+                    <img src="Image/Kväll.jpg" alt="stjärnskådning" title="stjärnskådning" />
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, aut.</p>
+                </div>
 
-         <div class="card">
-             <h4>Lägereld</h4>
-             <img src="Image/Marshmallow.jpg" alt="Lägereld" title="lägereld"/> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, laudantium.</p> 
+                <div class="card">
+                    <h4>Lägereld</h4>
+                    <img src="Image/Marshmallow.jpg" alt="Lägereld" title="lägereld" />
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, laudantium.</p>
+                </div>
+        </section>
+
+        <section class="activities">
+            <h2>AKTIVITETER</h2>
+
+            <div class="timeline">
+
+                <div class="container left">
+                    <div class="content">
+                        <div class="activities-card">
+                            <a href="https://sv.wikipedia.org/wiki/Vandring" target="_blank">
+                                <img src="Image/hike-icon.png" alt="vandring"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container right">
+                    <div class="content">
+                        <div class="activities-card">
+                            <a href="https://sv.wikipedia.org/wiki/Fiske" target="_blank">
+                                <img src="Image/fishing-icon.png" alt="fiske"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container left">
+                    <div class="content">
+                        <div class="activities-card">
+                            <a href="https://sv.wikipedia.org/wiki/Cykelsport" target="_blank">
+                                <img src="Image/bicycle-icon.png" alt="cykling"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
-         <section class="activities">
-             <h2>AKTIVITETER</h2>
-             <div class="wrapper">
-            <div class="activities-card">
-             <a href="https://sv.wikipedia.org/wiki/Vandring" target="_blank"></a>
-             <img src="Image/hike-icon.png" alt="vandring">
-             </div>
-                <div class="activities-card">
-                <a href="https://sv.wikipedia.org/wiki/Fiske" target="_blank"></a>
-                <img src="Image/fishing-icon.png" alt="fiske">
-            </div> 
 
-            <div class="activities-card">
-            <a href="https://sv.wikipedia.org/wiki/Cykelsport" target="_blank"></a>
-            <img src="Image/bicycle-icon.png" alt="cykling">
-            </div>
-            </div>
-            </section>
+        <div class="newsletter">
+            <form>
+                <p>Anmäl dig till att få vårt nyhetsbrev</p>
+                <div class="form-card">
+                    <label for="email">E-post</label><br>
+                    <input type="email" name="email" id="email" placeholder="epost@mail.com" required><br>
+                </div>
 
-            <section class="newsletter">
-                <form>
-                    <p>Anmäl dig till att få vårt nyhetsbrev</p>
-                    <div class="form-card">
-                     <label for="email">E-post</label><br>
-                     <input type="email" name="email" id="email" placeholder="epost@mail.com" required><br>
-                   </div>
+                <div class="form-card">
+                    <label for="checkbox"></label>
+                    <input type="checkbox" name="approved" id="checkbox" required>Godkänner villkoren
+                </div>
+                <button type="submit">Gå med</button>
+        </div>
 
-                    <div class="form-card">
-                        <label for="checkbox"></label>
-                        <input type="checkbox" name="approved" id="checkbox" required>Godkänner villkoren
-                    </div>
-                      <button type="submit">Gå med</button>
 
-                  
 
-                   <!-- SEP TEST KOD
+        <!-- SEP TEST KOD
                      E-post: <br><input type="email" required><br>
                     <input type="submit" value="Gå med">
                     <input type="reset">
                     <input type="checkbox" required> Godkänner villkoren -->
-                </form>
-            
-              </section>
+        </form>
+
+        </section>
     </main>
     <footer>
         <ul>
@@ -114,10 +132,11 @@
         </ul>
         <p>
             Camping<br>
-        Skogsvägen 45 <br>
-        145 34 Skogalund<br>
+            Skogsvägen 45 <br>
+            145 34 Skogalund<br>
         </p>
 
-    </footer> 
-    </body>
+    </footer>
+</body>
+
 </html>

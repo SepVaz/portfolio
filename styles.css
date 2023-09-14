@@ -8,7 +8,7 @@
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Image/camping.jpg");
-    height: 50%;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,9 +146,12 @@ h4 {
     width: 200px;
     display: flex;
     flex-direction: column;
-
   }
 
+.card:hover {
+  margin-top: -10px;
+ 
+}
   .card h4 {
     align-self: flex-start;
     padding-left: 1rem;
@@ -161,23 +164,87 @@ h4 {
     padding: 16px;
   }
 
-.activities-card {
-    background-color: #ece4df;
-    border: 1px solid #ccc;
-    padding: 50px;
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(10, 10, 10);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 70px;
     border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); margin: 50px;
-    margin: 40px;
-    width: 50px;
-    height: 50px;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    justify-content: flex-end;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+    
+    .activities-card {
+        background-color: #ece4df;
+        border: 1px solid #ccc;
+        padding: 50px;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
 
 .newsletter {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
 }
 
 form {

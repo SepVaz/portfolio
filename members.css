@@ -51,7 +51,6 @@ nav{
   padding: 10px 20px;
   justify-content: end;
   margin: 0px;
-  font-size: large;
 }
 
 a {
@@ -60,13 +59,42 @@ a {
   color:white;
 }
 
-h1 { 
+.members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); margin: auto;;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+}
+
+th {
+  background-color: rgb(223, 193, 174);
+} 
+ 
+
+/* SEP'S VERSION OF MEMBERS 
+  h2 { 
   text-align: center;
 }
 
 table {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); margin: auto;;
+  border-collapse: collapse;
 }
 
 thead tr {
@@ -90,5 +118,78 @@ table th {
 tbody td {
   padding: 10px;
   border-top: 1px solid #ccc;
- 
+}  */
+
+
+
+
+
+
+
+footer {
+  display: flex;
+  padding-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
 }
+
+footer ul {
+  display: flex;
+  padding-bottom: 10px;
+  }
+
+  footer li {
+      display: flex;
+      padding-top: 10px;
+      padding-right: 10px;
+  }
+
+  @media (max-width: 1024px) {
+      
+  }
+
+  @media (msx-width: 800px) {
+
+
+  }
+
+  @media (max-width: 600px) {
+
+      .hamburger {
+          display: flex;
+          justify-content: end;
+          padding: 10px
+      }
+      .hamburger img {
+          height: 20px;
+          width: 20px;
+      } */
+
+     .navbar li {
+          display: none;
+      }
+     
+      .button {
+          width: 100%;
+          font-size: 2.5rem;
+
+      }
+
+      .card {
+          width: 80%;
+          font-size: 2.5rem;
+      }
+
+      .newsletter {
+          font-size: 1.5rem;
+      }
+       .newsletter p {
+          font-size: 1.5rem;
+       }
+       
+       form button {
+          font-size: 1.5rem;
+       }
+
+
+  } 
