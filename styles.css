@@ -4,6 +4,7 @@
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .hero-image {
@@ -61,18 +62,40 @@ a {
     color: whitesmoke;
 }
 
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 265px;
+}
+
+.arrow {
+    width: 50px;
+    animation: studsa 2s infinite ;
+}
+
+@keyframes studsa {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(18px);
+     }
+     100%{
+        transform: translateY(10px);
+     }
+}
+.facilities {
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;}
+
 h2 {
     text-align: center;
     padding-bottom: 5px;
     padding-top: 5px;
 }
 
-
-.facilities{
-    text-align: center;
-    padding: 20px;
-    padding-bottom: 20px;
-    letter-spacing: 3px;}
 
 .button {
     padding-left: 30px;
@@ -84,6 +107,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     flex-wrap: wrap;
+    font-size: large;
 }
 
 ul.faciliteter{
