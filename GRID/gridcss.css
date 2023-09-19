@@ -1,0 +1,46 @@
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "info content aside"
+    "info content second-aside"
+    "footer footer footer"
+    ;
+    gap: 20px;
+
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #814646;
+}
+
+.info {
+    grid-area: info;
+    background-color: lightgray;
+}
+
+.content {
+    grid-area: content;
+    background-color: white;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: lightgray;
+}
+
+.second-aside {
+    grid-area: second-aside;
+    background-color: lightgray;
+}
+
+.footer {
+    grid-area: footer;
+    background-color:#814646;
+
+}
