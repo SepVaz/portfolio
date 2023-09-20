@@ -288,18 +288,17 @@ h4 {
      }
 
 .newsletter {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-self: center;
     margin-top: 50px;
     padding-bottom: 30px;
 }
 
 form {
-    border: 5px solid rgb(214, 199, 199);
     background-color: white;
     width: 300px;
     padding: 20px;
-    border-radius: 4px;
+    margin: 0;
 }
 
 form > p {
