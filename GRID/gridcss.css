@@ -31,7 +31,7 @@
 
 .aside {
     grid-area: aside;
-    background-color: lightgray;
+    background-color: rgb(185, 45, 45);
 }
 
 .second-aside {
@@ -44,3 +44,400 @@
     background-color:#814646;
 
 }
+
+
+
+
+
+
+body, html {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Image/camping.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0px 0px 20px 0px;
+}
+
+.hero-text {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    padding-top: 100px;
+    color: whitesmoke;
+
+}
+
+nav {
+    height: 50px;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.navbar ul {
+    flex-direction: row;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    font-size: large;  
+}
+
+.navbar li {
+    display: flex;
+    justify-content: end;
+    margin: 10px 20px;  
+}
+
+.hamburger {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 265px;
+}
+
+.arrow {
+    width: 50px;
+    animation: studsa 2s infinite ;
+}
+
+@keyframes studsa {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(18px);
+     }
+     100%{
+        transform: translateY(10px);
+     }
+}
+.facilities {
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;}
+
+h2 {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+.button {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 16px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+    font-size: large;
+}
+
+ul.faciliteter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center; 
+    padding: 20px;
+}    
+
+.services {
+    padding: 0px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section p {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+  }
+  
+
+main li {
+    display: inline-block;
+    background-color: #fdfdfd;
+    border: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0px;  
+    padding: 20px;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 100;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: #ece4df;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); margin: auto;
+    margin: 50px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.card:hover {
+  margin-top: -10px;
+ 
+}
+  .card h4 {
+    align-self: flex-start;
+    padding-left: 1rem;
+  }
+  
+  .card p {
+    background-color: white;
+    align-self: flex-start;
+    margin: 0;
+    padding: 16px;
+  }
+
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(10, 10, 10);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 70px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+    
+    .activities-card {
+        background-color: #ece4df;
+        border: 1px solid #ccc;
+        padding: 50px;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+form {
+    border: 5px solid rgb(214, 199, 199);
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+form > p {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5p;
+    color: rgb(163, 131, 131);
+}
+
+input[type="email"]{ 
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ece4df;
+    border-radius: 4px;
+}
+
+input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+input[placeholder="epost@mail.com"]{
+    font-size: 1em;
+    padding: 8px;
+}
+
+.form-card {
+    margin-bottom: 15px;
+    padding: 1rem;
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(116, 161, 116);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: none;
+    font-size:medium
+}
+
+
+footer {
+    display: flex;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer ul {
+    display: flex;
+    padding-bottom: 10px;
+    }
+
+    footer li {
+        display: flex;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+
+    @media (max-width: 1024px) {
+        
+    }
+
+    @media (msx-width: 800px) {
+
+
+    }
+
+    @media (max-width: 600px) {
+
+        .hamburger {
+            display: flex;
+            justify-content: end;
+            padding: 10px
+        }
+        .hamburger img {
+            height: 20px;
+            width: 20px;
+        } */
+
+       .navbar li {
+            display: none;
+        }
+       
+        .button {
+            width: 100%;
+            font-size: 2.5rem;
+
+        }
+
+        .card {
+            width: 80%;
+            font-size: 2.5rem;
+        }
+
+        .newsletter {
+            font-size: 1.5rem;
+        }
+         .newsletter p {
+            font-size: 1.5rem;
+         }
+         
+         form button {
+            font-size: 1.5rem;
+         }
+
+
+    } 
