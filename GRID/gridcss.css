@@ -32,7 +32,7 @@
 
 .aside {
     grid-area: aside;
-    background-color: rgb(185, 45, 45);
+    background-color: rgb(226, 202, 202);
 }
 
 .second-aside {
@@ -58,11 +58,12 @@ body, html {
     margin-top: 5px;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: #e7e5e5;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Image/camping.jpg");
-    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/camping.jpg");
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,12 +74,13 @@ body, html {
 .hero-text {
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 400;
-    padding-top: 100px;
+    margin: 0;
     color: whitesmoke;
-
+    padding-top: 50px;
 }
+
 
 nav {
     height: 50px;
@@ -129,65 +131,18 @@ a {
     color: whitesmoke;
 }
 
-.arrow-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 265px;
-}
-
-.arrow {
-    width: 50px;
-    animation: studsa 2s infinite ;
-}
-
-@keyframes studsa {
-    0%{
-        transform: translateY(10px);
-    }
-    50%{
-        transform: translateY(18px);
-     }
-     100%{
-        transform: translateY(10px);
-     }
-}
-.facilities {
-    text-align: center;
-    padding: 50px;
-    padding-bottom: 20px;
-    letter-spacing: 3px;}
-
 h2 {
-    text-align: center;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-
-.button {
+    text-align: left;
     padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 16px;
-    border: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    flex-wrap: wrap;
-    font-size: large;
+    font-weight: 300;
+    font-size: x-large;
 }
 
-ul.faciliteter{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center; 
-    padding: 20px;
-}    
+
 
 .services {
     padding: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -217,8 +172,9 @@ h4 {
     text-align: center;
     font-weight: 100;
     padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: bold;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .wrapper {
@@ -232,8 +188,8 @@ h4 {
     background-color: #ece4df;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); margin: auto;
-    margin: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); margin: auto;
+    margin: 10px;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -312,7 +268,7 @@ h4 {
   
   /* The actual content */
   .content {
-    padding: 20px 30px;
+    
     background-color: white;
     position: relative;
     border-radius: 6px;
